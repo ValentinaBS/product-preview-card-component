@@ -1,0 +1,156 @@
+/* font-family: 'Fraunces', serif; weight: 500, 700
+font-family: 'Montserrat', sans-serif; weight: 700
+
+Primary Colors
+- Dark cyan (d-cyan - button and price): hsl(158, 36%, 37%)
+- Hover cyan (h-cyan - active button): hsl(158, 43%, 23%)
+- Cream (cream - page background): hsl(30, 38%, 92%)
+
+Neutral
+- Very dark blue (d-blue - title): hsl(212, 21%, 14%)
+- Dark grayish blue (g-blue - descriptions and old price): hsl(228, 12%, 48%)
+- White (card background): hsl(0, 0%, 100%) */
+
+:root {
+    --d-cyan: hsl(158, 36%, 37%);
+    --h-cyan: hsl(158, 43%, 23%);
+    --cream: hsl(30, 38%, 92%);
+    --d-blue: hsl(212, 21%, 14%);
+    --g-blue: hsl(228, 12%, 48%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    max-width: 350px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-description {
+    padding: 20px 25px 25px;
+}
+
+.category {
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.9rem;
+    color: var(--g-blue);
+}
+
+.product-title {
+    color: var(--d-blue);
+    line-height: 1.0;
+    font-size: 2.05rem;
+}
+
+.product-description {
+    margin: 18px 0 20px;
+    line-height: 1.6em;
+}
+
+.product-title, .new-price {
+    font-family: 'Fraunces', serif;
+}
+
+.prices {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.new-price {
+    color: var(--d-cyan);
+    font-size: 2rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    margin-left: 20px;
+    font-size: 0.85rem; 
+}
+
+.add-cart {
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--d-cyan);
+    border: none;
+    color: white;
+    padding: 1.2em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.add-cart:hover {
+    background-color: var(--h-cyan);
+}
+
+.icon-cart {
+    margin-right: 0.8em;
+    max-width: 100%;
+}
+
+footer {
+    font-size: 11px; 
+    text-align: center;
+    line-height: 2.5em;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        display: flex;
+        max-width: 600px;
+    }
+    .product-img {
+        height: 100%;
+        min-width: 300px;
+        border-radius: 10px 0 0 10px;
+    }
+    .card-description {
+        padding: 30px;
+    }
+    .category {
+        margin-bottom: 18px;
+    }
+    .product-description{
+        margin: 20px 0 28px;
+    }
+    .prices {
+        margin-bottom: 25px;
+    }
+}
