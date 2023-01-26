@@ -36,8 +36,8 @@ Project preview
 
 ### Links
 
-- Solution URL: [Solution in Frontend Mentor]()
-- Live Site URL: [Vercel Deploy]()
+- Solution URL: [Solution in Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-ziEn58RQTu)
+- Live Site URL: [Vercel Deploy](https://product-preview-card-component-five-inky.vercel.app/)
 
 ## My process
 
